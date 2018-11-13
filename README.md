@@ -1,5 +1,5 @@
 # Mapster Documentation
-<img src="https://bricewa.me/resources/img/logo/mapster/icon.png" width="250">
+<img src="https://bricewa.me/resources/img/logo/mapster/logo.png" width="250">
 
 ## Description
 #### Application Purpose
