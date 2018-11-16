@@ -14,4 +14,5 @@ export class MessagesProvider {
     console.log('Hello MessagesProvider Provider');
   }
 
+  //TODO: Search for users function
 }

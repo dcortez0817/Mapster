@@ -1,4 +1,4 @@
-webpackJsonp([5],{
+webpackJsonp([7],{
 
 /***/ 196:
 /***/ (function(module, exports) {
@@ -22,23 +22,31 @@ webpackEmptyAsyncContext.id = 196;
 
 var map = {
 	"../pages/home/home.module": [
+		509,
+		5
+	],
+	"../pages/login/login.module": [
 		505,
 		4
 	],
-	"../pages/login/login.module": [
+	"../pages/messages/messages.module": [
 		506,
 		3
 	],
 	"../pages/modal-profile/modal-profile.module": [
-		507,
+		508,
 		2
 	],
+	"../pages/new-message/new-message.module": [
+		507,
+		6
+	],
 	"../pages/profile/profile.module": [
-		508,
+		510,
 		1
 	],
 	"../pages/register/register.module": [
-		509,
+		511,
 		0
 	]
 };
@@ -378,9 +386,11 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/messages/messages.module#MessagesPageModule', name: 'MessagesPage', segment: 'messages', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/new-message/new-message.module#NewMessagePageModule', name: 'NewMessagePage', segment: 'new-message', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modal-profile/modal-profile.module#ModalProfilePageModule', name: 'ModalProfilePage', segment: 'modal-profile', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] }
                     ]
@@ -452,7 +462,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/brice/source/repos/Mapster/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/home/brice/source/repos/Mapster/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Travis\Documents\School_Related\4443-Mobile-Apps-rowe\Mapster\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\Travis\Documents\School_Related\4443-Mobile-Apps-rowe\Mapster\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_4__providers_auth_auth__["a" /* AuthProvider */]])
     ], MyApp);
@@ -510,13 +520,21 @@ var DataProvider = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FIREBASE_CONFIG; });
 var FIREBASE_CONFIG = {
-    apiKey: "AIzaSyBTMPM_jfVkTMxUMjkF8PVwDAhO9_uIuns",
-    authDomain: "mapster-3ccc5.firebaseapp.com",
-    databaseURL: "https://mapster-3ccc5.firebaseio.com",
-    projectId: "mapster-3ccc5",
-    storageBucket: "mapster-3ccc5.appspot.com",
-    messagingSenderId: "203830056689"
+    apiKey: "AIzaSyB8URRvDF-nZ0_1r9UaYLBDmU2zjzJgYHM",
+    authDomain: "mapster-messaging.firebaseapp.com",
+    databaseURL: "https://mapster-messaging.firebaseio.com",
+    projectId: "mapster-messaging",
+    storageBucket: "mapster-messaging.appspot.com",
+    messagingSenderId: "410960406640"
 };
+// export const FIREBASE_CONFIG = {
+//     apiKey: "AIzaSyBTMPM_jfVkTMxUMjkF8PVwDAhO9_uIuns",
+//     authDomain: "mapster-3ccc5.firebaseapp.com",
+//     databaseURL: "https://mapster-3ccc5.firebaseio.com",
+//     projectId: "mapster-3ccc5",
+//     storageBucket: "mapster-3ccc5.appspot.com",
+//     messagingSenderId: "203830056689"
+// } 
 //# sourceMappingURL=app.firebase.config.js.map
 
 /***/ }),
@@ -672,9 +690,10 @@ var MessagesProvider = /** @class */ (function () {
     }
     MessagesProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object])
     ], MessagesProvider);
     return MessagesProvider;
+    var _a;
 }());
 
 //# sourceMappingURL=messages.js.map

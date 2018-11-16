@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { TOAST_DURATION, Pages, LoadingMessages, ErrorMessages } from '../../utils/constants';
+import { MessagesPage } from '../messages/messages';
 
 
 /**
@@ -27,6 +28,11 @@ export class HomePage {
   public openProfileModal() {
     let profileModal = this.modal.create(Pages.MODAL_PROFILE);
     profileModal.present();
+  }
+
+  public openMessagesPage()
+  {
+    this.navCtrl.push(MessagesPage)
   }
 
   public closeModal() {

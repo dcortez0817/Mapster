@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NewMessagePage } from '../new-message/new-message';
+import { Pages } from '../../utils/constants';
 
 /**
  * Generated class for the MessagesPage page.
@@ -22,4 +24,12 @@ export class MessagesPage {
     console.log('ionViewDidLoad MessagesPage');
   }
 
+  //navigate to newMessagePage
+  newMessageClick() 
+  {
+    this.navCtrl.push(NewMessagePage) //page for drafting a new message
+  }
+
+  //TODO: Click on users to view conversations with them
+  //TODO: Search for users
 }
