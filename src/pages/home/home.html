@@ -26,5 +26,16 @@
 
 
 <ion-content padding>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col col-md-4 offset-md-4>
+        <button ion-button (click)="openImagePickerCrop()">Select Photo (Crop)</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-md-4 offset-md-4>
+        <button ion-button (click)="takePicture()">Take a Picture</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -18,6 +18,12 @@ import { MapProvider } from '../providers/map/map';
 import { LocationProvider } from '../providers/location/location';
 import { MessagesProvider } from '../providers/messages/messages';
 import { UtilitiesProvider } from '../providers/utilities/utilities';
+import { ImagePicker } from '@ionic-native/image-picker';
+import { Crop } from '@ionic-native/crop';
+import { Camera } from '@ionic-native/camera';
+import { DatabaseServicesProvider } from '../providers/database-services/database-services';
+import { AngularFireStorageModule } from 'angularfire2/storage';
+import { FirebaseService } from '../pages/service/firebase.service';
 
 @NgModule({
   declarations: [
@@ -45,7 +51,12 @@ import { UtilitiesProvider } from '../providers/utilities/utilities';
     MapProvider,
     LocationProvider,
     MessagesProvider,
-    UtilitiesProvider
+    UtilitiesProvider,
+    ImagePicker,
+    Crop,
+    Camera,
+    FirebaseService,
+    DatabaseServicesProvider,
   ]
 })
 
