@@ -7,6 +7,7 @@
 
 -https://github.com/briceallard/Mapster/tree/camera/src/pages/home (Just put our stuff on the home page for now. Will eventually get moved. HTML and TS)
 -https://github.com/briceallard/Mapster/blob/camera/src/pages/service/firebase.service.ts (we are using our own firebase for testing purposes)
+
 -https://github.com/briceallard/Mapster/blob/camera/src/providers/database-services/database-services.ts
 -https://github.com/briceallard/Mapster/blob/camera/src/app/app.module.ts
 
